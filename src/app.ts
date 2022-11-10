@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import { isH5, isWeapp } from './utils/client';
-if (isWeapp) {
+import { isH5, isWeapp, isAlipay } from './utils/client';
+if (isWeapp || isAlipay) {
   import('./styles/index.less');
 }
 if (isH5) {

@@ -34,8 +34,10 @@ const Index = () => {
         <View onClick={handleLogoClick}>
           <Avatar src={logo} className={styles.avatar} />
         </View>
+        <div>234335</div>
         <View>
-          以<Text>antd-mobile</Text>为设计标准
+          以<div>23433</div>
+          <Text>antd-mobile</Text>为设计标准23344
         </View>
         <View>
           基于<Text>Taro</Text>框架的微信小程序组件库
