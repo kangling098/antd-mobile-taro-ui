@@ -12,7 +12,13 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: `dist/${process.env.TARO_ENV}`,
-  plugins: [],
+  plugins: [
+    // ['@tarojs/plugin-html', {
+    //   // 过滤 antd 组件库的前缀：am-
+    //   pxtransformBlackList: [/am-/, /demo-/, /^body/]
+    // }]
+    '@tarojs/plugin-html',
+  ],
   defineConstants: {},
   copy: {
     patterns: [],
@@ -64,6 +70,13 @@ const config = {
         },
       },
     },
+    plugins: [
+      // ['@tarojs/plugin-html', {
+      //   // 过滤 antd 组件库的前缀：am-
+      //   pxtransformBlackList: [/am-/, /demo-/, /^body/]
+      // }]
+      '@tarojs/plugin-html',
+    ],
   },
   h5: {
     publicPath: '/',
